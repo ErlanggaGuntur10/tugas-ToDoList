@@ -31,7 +31,6 @@ const TodoCard = ({
     return (
         <div className="custom flex justify-between p-2 bg-gray-400 rounded mb-5 items-center">
             {/* completed, edit, save, remove */}
-            {!todo.completed && (
             <div className="flex gap-3 items-right">
             <input
                     type="checkbox"
@@ -42,7 +41,6 @@ const TodoCard = ({
                 <label htmlFor="completed"></label>
                 <div></div>
             </div>
-            )}
             
             {/* Edit teks */}
             <div className={`flex-grow ${todo.completed ? "line-through" : " "}`}>
